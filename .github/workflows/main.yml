@@ -9,18 +9,18 @@ jobs:
   build:
 
 
-    runs-on: macos-latest
+    runs-on: windows-latest
 
 
     steps:
 
     - name: Download
 
-      run: curl https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-darwin-amd64.zip 
+      run: Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip 
       
     - name: Extract
 
-      run: Expand-Archive ngrok-v3-stable-darwin-amd64.zip
+      run: Expand-Archive ngrok-v3-stable-windows-amd64.zip
 
     - name: Auth
 
